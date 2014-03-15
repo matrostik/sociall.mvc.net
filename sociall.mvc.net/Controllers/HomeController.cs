@@ -17,6 +17,7 @@ namespace sociall.mvc.net.Controllers
 
         public ActionResult About()
         {
+            ViewBag.Title = "About";
             ViewBag.Message = "sociAll.";
 
             return View();
@@ -24,7 +25,8 @@ namespace sociall.mvc.net.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "";
+            ViewBag.Title = "About";
+            ViewBag.Message = "socials.";
 
             return View();
         }
